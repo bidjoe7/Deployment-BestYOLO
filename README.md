@@ -17,9 +17,10 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-<a align="center"> 
-![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754)
-</a>
+
+<!-- ![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754) -->
+![ezgif com-video-to-gif](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/3a6b65d2-4902-4f4d-8047-ba6b3f816148)
+
 
 ## About
 
