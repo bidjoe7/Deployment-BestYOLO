@@ -12,7 +12,7 @@
 <p align="center">
   <a href="#About">About</a> •
   <a href="#Dataset">Dataset</a> •
-  <a href="#Collab">Dataset</a> •
+  <a href="#Collab">Collab</a> •
   <a href="#Download">Models</a> •
   <a href="#Credits">Credits</a> •
 </p>
