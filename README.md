@@ -51,7 +51,7 @@ This project uses the following open source packages:
 <br>
 <a href="https://github.com/WangRongsheng/BestYOLO/" ><img src="https://user-images.githubusercontent.com/132433948/243158168-9c122445-0077-446f-9200-35d21f4adcd4.png" alt="Roboflow" width="13"> BestYOLO</a>
 <br>
-<a href="https://streamlit.io/" ><img src="https://user-images.githubusercontent.com/132433948/243158560-2bfed960-e925-43d1-b516-fc3043f93bc4.png" alt="Roboflow" width="13"> BestYOLO</a>
+<a href="https://streamlit.io/" ><img src="https://user-images.githubusercontent.com/132433948/243158560-2bfed960-e925-43d1-b516-fc3043f93bc4.png" alt="Roboflow" width="13"> Streamlit</a>
 
 
 
