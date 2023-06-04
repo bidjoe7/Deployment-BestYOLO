@@ -3,7 +3,7 @@
   <br>
   <a href=""><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/bc8ef9e8-6a3a-4195-9e34-ef4b96c5af3b" alt="Markdownify" width="300"></a>
   <br>
-  BIDJOE
+  SCYRIS
   <br>
 </h1>
 
