@@ -37,9 +37,9 @@ The dataset are sourced from `Roboflow`, you can access with link below :
 You can train the model by your self with collab we've preparing below :
 <br>
 
-- [Hard Hat](https://colab.research.google.com/drive/17gPm4mht2L5FwxzA-dKpW3RX8VJWvTJ2?usp=sharing)
+- [Hard Hat](https://colab.research.google.com/drive/1qa4I47fHRuj1ro1j-cT8xDOQsIuvX0ps?usp=sharing)
 - [Safety Vest](https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing)
-- [Safety Protocol](https://colab.research.google.com/drive/1P1FXiOSulVQ7np33bOMM7s6ZYtGv7yee?usp=sharing)
+- [Safety Protocol](https://colab.research.google.com/drive/1PfoKeyG3i7jw0fnqgxr0hejvBm88CQ6A?usp=sharing)
 
 ## Models
 
