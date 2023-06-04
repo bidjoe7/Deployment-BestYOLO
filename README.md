@@ -55,7 +55,17 @@ You can train the model by your self with collab we've preparing bellow :
 
 ## Models
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the models with .pt and .pkl extention.
+Download the trained models below :
+<br>
+- [Hard Hat](https://huggingface.co/BIDJOE/Hard-Hat-100E/tree/main)
+- [Safety Vest]()
+- [Safety Protocol](https://huggingface.co/BIDJOE/Safety-Protocol-100E/tree/main)
+
+
+
+<br>
+*The models extention contain .pt and .pkl
+
 
 ## Emailware
 
