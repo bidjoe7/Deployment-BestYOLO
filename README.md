@@ -1,9 +1,9 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/dd043632-1c40-41dc-9f56-b7c798d345df" alt="Markdownify" width="200"></a>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/dd043632-1c40-41dc-9f56-b7c798d345df" alt="Markdownify" width="400"></a>
   <br>
-  Markdownify
+  Bidjoe (Bintang Toejoe)
   <br>
 </h1>
 
