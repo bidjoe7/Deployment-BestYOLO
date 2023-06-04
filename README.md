@@ -45,11 +45,11 @@ Download the trained models below :
 
 ## Credits
 
-This software uses the following open source packages:
+This project uses the following open source packages:
 
 <a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
 <br>
-<a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
+<a href="https://github.com/WangRongsheng/BestYOLO" ><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/9c122445-0077-446f-9200-35d21f4adcd4" alt="Roboflow" width="12"> BestYOLO</a>
 <br>
 <a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
 <br>
