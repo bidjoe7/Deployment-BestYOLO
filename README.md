@@ -12,19 +12,15 @@
 <p align="center">
   <a href="#key-features">About</a> •
   <a href="#how-to-use">Dataset</a> •
-  <a href="#download">Download</a> •
+  <a href="#download">Models</a> •
   <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  <a href="#license">License</a>
 </p>
 
 ![0604(1)](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/4b0776d8-d11c-43fa-86cc-9fc4f06060c1)
 
-
-
 ## About
 
-About Section
+SCYRIS (Safety Construction YOLO-Resnet Integrated System) is a system developed to detect safety gear in construction environments. This system utilizes a technology called YOLO (You Only Look Once) and Resnet (Residual Network), which harnesses artificial intelligence and image processing to perform fast and accurate detection.
 
 ## Dataset
 
@@ -48,7 +44,7 @@ $ npm start
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 
-## Model
+## Models
 
 You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the models with .pt and .pkl extention.
 
