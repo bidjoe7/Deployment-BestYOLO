@@ -13,12 +13,26 @@ from datetime import datetime
 import base64
 from moviepy.editor import VideoFileClip, ImageSequenceClip
 import subprocess
+import wget
+
+model_url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
+save_path = "/content/models/SafetyProtocol.pt"  # Specify the path to save the downloaded model
+
+model_url1 = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
+save_path1 = "/content/models/SafetyVest.pt"  # Specify the path to save the downloaded model
+
+model_url2 = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Hard_hat-best.pt"
+save_path2 = "/content/models/SafetyHelmet.pt"  # Specify the path to save the downloaded model
+# Download the model
+wget.download(model_url, save_path)
+wget.download(model_url1, save_path1)
+wget.download(model_url2, save_path2)
 
 
 
 st.set_page_config(layout="wide")
 
-cfg_model_path = 'models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
+cfg_model_path = '/content/models/SafetyProtocol.pt'
 model = None
 confidence = .25
 
@@ -112,7 +126,8 @@ def video_input(data_src):
 #draw bounding box
 def predict(model, frame):
     """Generate predictions and annotate the predicted frame."""
-    resx = model(frame, size=416).crop(save=False)
+    model.conf = confidence
+    resx = model(frame, size=416).crop(save=False) 
     for d in resx:
         box = list(map(int, list(map(np.round, d['box']))))
         label = d['label']
@@ -179,9 +194,15 @@ def main():
     st.sidebar.title("Settings")
 
     # upload model
-    model_src = st.sidebar.radio("Select yolov5 weight file", ["Use our demo model 5s", "Use your own model"])
+    model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol [GhostNet]","👷🏾‍♂️ Safety Protocol [Non GhostNet]", "🦺 Safety Vest", "⛑️ Helmet", "📤 Use Your Own Model"])
     # URL, upload file (max 200 mb)
-    if model_src == "Use your own model":
+    if model_src == "👷🏾‍♂️ Safety Protocol [Non GhostNet]":
+        cfg_model_path = '/content/models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
+    if model_src == "🦺 Safety Vest":
+        cfg_model_path = '/content/models/SafetyVest.pt'
+    if model_src == "⛑️ Helmet":
+        cfg_model_path = '/content/models/SafetyHelmet.pt'    
+    if model_src == "📤 Use Your Own Model":
         user_model_path = get_user_model()
         if user_model_path:
             cfg_model_path = user_model_path
@@ -235,5 +256,4 @@ if __name__ == "__main__":
         main()
     except SystemExit:
         pass
-
 
