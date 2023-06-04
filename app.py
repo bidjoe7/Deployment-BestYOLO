@@ -178,7 +178,7 @@ def main():
     st.sidebar.title("Settings")
 
     # upload model
-    model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol [GhostNet]","👷🏾‍♂️ Safety Protocol [Non GhostNet]", "🦺 Safety Vest", "⛑️ Helmet", "📤 Use Your Own Model"])
+    model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol [GhostNet]","👷🏾‍♂️ Safety Protocol [Non GhostNet]", "🦺 Safety Vest", "⛑️ Helmet"])
     # URL, upload file (max 200 mb)
     if model_src == "👷🏻‍♂️ Safety Protocol [GhostNet]":
         url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
@@ -200,13 +200,6 @@ def main():
         if model_file_.split(".")[-1] == "pt":
             model_file = model_file_
             cfg_model_path = model_file    
-    if model_src == "📤 Use Your Own Model":
-        user_model_path = get_user_model()
-        if user_model_path:
-            cfg_model_path = user_model_path
-
-        st.sidebar.text(cfg_model_path.split("/")[-1])
-        st.sidebar.markdown("---")
 
     # check if model file is available
     if not os.path.isfile(cfg_model_path):
