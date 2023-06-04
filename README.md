@@ -47,14 +47,12 @@ Download the trained models below :
 
 This software uses the following open source packages:
 
-<a href="" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
+<a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
+<br>
+<a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
+<br>
+<a href="https://roboflow.com/" ><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="12"> Roboflow</a>
+<br>
 ## Support
 
 <a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
