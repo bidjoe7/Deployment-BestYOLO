@@ -15,6 +15,7 @@ from moviepy.editor import VideoFileClip, ImageSequenceClip
 import subprocess
 import wget
 
+@st.cache_resource
 model_url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
 save_path = "/content/models/SafetyProtocol.pt"  # Specify the path to save the downloaded model
 
