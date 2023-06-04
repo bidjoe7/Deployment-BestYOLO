@@ -13,7 +13,7 @@
   <a href="#About">About</a> •
   <a href="#Dataset">Dataset</a> •
   <a href="#Collab">Collab</a> •
-  <a href="#Download">Models</a> •
+  <a href="#Models">Models</a> •
   <a href="#Credits">Credits</a> •
 </p>
 
@@ -61,15 +61,8 @@ Download the trained models below :
 - [Safety Vest]()
 - [Safety Protocol](https://huggingface.co/BIDJOE/Safety-Protocol-100E/tree/main)
 
-
-
 > **Note**
 > The models contain `.pt` and `.pkl` extension.
-
-
-## Emailware
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
 
 ## Credits
 
@@ -82,10 +75,6 @@ This software uses the following open source packages:
 - [CodeMirror](http://codemirror.net/)
 - Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
 - [highlight.js](https://highlightjs.org/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
 
 ## Support
 
