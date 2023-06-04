@@ -47,7 +47,7 @@ Download the trained models below :
 
 This software uses the following open source packages:
 
-<a href=""><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="10"> Roboflow</a>
+<a href=""><img src="https://user-images.githubusercontent.com/132433948/243157818-ef372637-9336-445a-8878-e6e7dcee413a.png" alt="Roboflow" width="25"> Roboflow</a>
 - [Node.js](https://nodejs.org/)
 - [Marked - a markdown parser](https://github.com/chjj/marked)
 - [showdown](http://showdownjs.github.io/showdown/)
