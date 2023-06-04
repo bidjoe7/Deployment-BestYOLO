@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/dd043632-1c40-41dc-9f56-b7c798d345df" alt="Markdownify" width="300"></a>
+  <a href=""><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/dd043632-1c40-41dc-9f56-b7c798d345df" alt="Markdownify" width="300"></a>
   <br>
   BIDJOE
   <br>
@@ -17,9 +17,9 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-
+<a align="center"> 
 ![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754)
-
+</a>
 ## About
 
 About Section
