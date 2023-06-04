@@ -26,7 +26,7 @@ SCYRIS (Safety Construction YOLO-Resnet Integrated System) is a system developed
 
 ## Collab
 
-You can train the model by your self with collab we've preparing bellow :
+You can train the model by your self with collab we've preparing below :
 <br>
 
 - [Hard Hat](https://colab.research.google.com/drive/17gPm4mht2L5FwxzA-dKpW3RX8VJWvTJ2?usp=sharing)
