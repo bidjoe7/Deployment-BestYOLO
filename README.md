@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="#About">About</a> •
-  <a href="#Dataset">Dataset</a> •
+<!--   <a href="#Dataset">Dataset</a> • -->
   <a href="#Collab">Collab</a> •
   <a href="#Models">Models</a> •
   <a href="#Credits">Credits</a> •
@@ -22,27 +22,6 @@
 ## About
 
 SCYRIS (Safety Construction YOLO-Resnet Integrated System) is a system developed to detect safety gear in construction environments. This system utilizes a technology called YOLO (You Only Look Once) and Resnet (Residual Network), which harnesses artificial intelligence and image processing to perform fast and accurate detection.
-
-## Dataset
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
-
-# Go into the repository
-$ cd electron-markdownify
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
-
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 ## Collab
 
@@ -86,18 +65,5 @@ This software uses the following open source packages:
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
-## You may also like...
 
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
-
-## License
-
-MIT
-
----
-
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
 
