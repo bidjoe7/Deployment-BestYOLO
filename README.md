@@ -49,7 +49,10 @@ $ npm start
 You can train the model by your self with collab we've preparing bellow :
 <br>
 
+- [Hard Hat](https://colab.research.google.com/drive/17gPm4mht2L5FwxzA-dKpW3RX8VJWvTJ2?usp=sharing)
 - [Safety Vest](https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing)
+
+
 
 
 ## Models
