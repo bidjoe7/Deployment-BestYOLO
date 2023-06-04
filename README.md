@@ -23,8 +23,9 @@
 
 <!-- ![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754) -->
 
+![video github](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/7ce8cdd2-de07-4705-92d9-675324d8443e)
 
-https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/8bd49d1f-7265-42dc-b516-075ef0d2cbfa
+<!-- https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/8bd49d1f-7265-42dc-b516-075ef0d2cbfa -->
 
 
 
