@@ -15,22 +15,6 @@ from moviepy.editor import VideoFileClip, ImageSequenceClip
 import subprocess
 import wget
 
-@st.cache_resource
-model_url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
-save_path = "/content/models/SafetyProtocol.pt"  # Specify the path to save the downloaded model
-
-model_url1 = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
-save_path1 = "/content/models/SafetyVest.pt"  # Specify the path to save the downloaded model
-
-model_url2 = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Hard_hat-best.pt"
-save_path2 = "/content/models/SafetyHelmet.pt"  # Specify the path to save the downloaded model
-# Download the model
-wget.download(model_url, save_path)
-wget.download(model_url1, save_path1)
-wget.download(model_url2, save_path2)
-
-
-
 st.set_page_config(layout="wide")
 
 cfg_model_path = '/content/models/SafetyProtocol.pt'
@@ -200,9 +184,17 @@ def main():
     if model_src == "👷🏾‍♂️ Safety Protocol [Non GhostNet]":
         cfg_model_path = '/content/models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
     if model_src == "🦺 Safety Vest":
-        cfg_model_path = '/content/models/SafetyVest.pt'
+        url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
+        model_file_ = download_model(url)
+            if model_file_.split(".")[-1] == "pt":
+                model_file = model_file_
+                cfg_model_path = model_file
     if model_src == "⛑️ Helmet":
-        cfg_model_path = '/content/models/SafetyHelmet.pt'    
+        url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Hard_hat-best.pt"
+        model_file_ = download_model(url)
+            if model_file_.split(".")[-1] == "pt":
+                model_file = model_file_
+                cfg_model_path = model_file    
     if model_src == "📤 Use Your Own Model":
         user_model_path = get_user_model()
         if user_model_path:
