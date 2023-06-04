@@ -45,9 +45,9 @@ You can train the model by your self with collab we've preparing below :
 
 Download the trained models below :
 <br>
-- [Hard Hat](https://huggingface.co/BIDJOE/Hard-Hat-100E/tree/main)
-- [Safety Vest]()
-- [Safety Protocol](https://huggingface.co/BIDJOE/Safety-Protocol-100E/tree/main)
+- [Hard Hat](https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/blob/main/Hard_hat-best.pt)
+- [Safety Vest](https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/blob/main/Safety_vest-best.pt)
+- [Safety Protocol](https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/blob/main/Safety_protocol-best.pt)
 
 > **Note**
 > The models contain `.pt` and `.pkl` extension.
