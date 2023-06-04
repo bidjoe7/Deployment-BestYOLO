@@ -14,7 +14,7 @@
 <!--   <a href="#Dataset">Dataset</a> • -->
   <a href="#Collab">Collab</a> •
   <a href="#Models">Models</a> •
-  <a href="#Credits">Credits</a> •
+  <a href="#Credits">Credits</a>
 </p>
 
 ![0604(1)](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/4b0776d8-d11c-43fa-86cc-9fc4f06060c1)
