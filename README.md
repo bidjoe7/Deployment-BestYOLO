@@ -10,10 +10,11 @@
 <h3 align="center">Safety Construction YOLO-Resnet Integrated System</h3>
 
 <p align="center">
-  <a href="#key-features">About</a> •
-  <a href="#how-to-use">Dataset</a> •
-  <a href="#download">Models</a> •
-  <a href="#credits">Credits</a> •
+  <a href="#About">About</a> •
+  <a href="#Dataset">Dataset</a> •
+  <a href="#Collab">Dataset</a> •
+  <a href="#Download">Models</a> •
+  <a href="#Credits">Credits</a> •
 </p>
 
 ![0604(1)](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/4b0776d8-d11c-43fa-86cc-9fc4f06060c1)
