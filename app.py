@@ -187,7 +187,7 @@ def main():
             model_file = model_file_
             cfg_model_path = model_file
     if model_src == "👷🏾‍♂️ Safety Protocol [Non GhostNet]":
-        cfg_model_path = '/models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
+        cfg_model_path = 'models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
     if model_src == "🦺 Safety Vest":
         url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
         model_file_ = download_model(url)
