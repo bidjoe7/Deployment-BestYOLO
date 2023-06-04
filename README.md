@@ -21,7 +21,11 @@
 <!-- ![ezgif com-video-to-gif (1)](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/cf6ada43-c66d-459a-8f1d-514dea877177) -->
 
 
-![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754)
+<!-- ![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754) -->
+
+
+https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/8bd49d1f-7265-42dc-b516-075ef0d2cbfa
+
 
 
 ## About
