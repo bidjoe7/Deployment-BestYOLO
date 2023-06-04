@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href=""><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/dd043632-1c40-41dc-9f56-b7c798d345df" alt="Markdownify" width="300"></a>
+  <a href=""><img src="https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/bc8ef9e8-6a3a-4195-9e34-ef4b96c5af3b" alt="Markdownify" width="300"></a>
   <br>
   BIDJOE
   <br>
