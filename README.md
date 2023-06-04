@@ -64,7 +64,8 @@ Download the trained models below :
 
 
 <br>
-*The models extention contain .pt and .pkl
+> **Note**
+> The models contain .pt and .pkl extention
 
 
 ## Emailware
