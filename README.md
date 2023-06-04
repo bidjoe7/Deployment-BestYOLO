@@ -5,9 +5,10 @@
   <br>
   SCYRIS
   <br>
+<h3 align="center">Safety Construction YOLO-Resnet Integrated System</h3>
 </h1>
 
-<h3 align="center">Safety Construction YOLO-Resnet Integrated System</h3>
+
 
 <p align="center">
   <a href="#About">About</a> •
