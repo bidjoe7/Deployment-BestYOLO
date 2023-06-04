@@ -47,7 +47,9 @@ $ npm start
 ## Collab
 
 You can train the model by your self with collab we've preparing bellow :
-<a href="https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing">Safety Vest</a>
+<br>
+
+- [Safety Vest]([http://electron.atom.io/](https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing))
 
 
 ## Models
