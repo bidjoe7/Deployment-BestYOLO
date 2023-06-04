@@ -17,9 +17,8 @@
   <a href="#related">Related</a> •
   <a href="#license">License</a>
 </p>
-<a align="center"> 
+
 ![screenshot](https://github.com/bidjoe7/Deployment-BestYOLO/assets/132433948/90f04586-ce6c-44a4-a40a-1866cca7f754)
-</a>
 
 ## About
 
