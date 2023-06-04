@@ -44,6 +44,11 @@ $ npm start
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
+## Collab
+
+You can train the model by your self with collab we've preparing bellow :
+<a href="https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing">Safety Vest</a>
+
 
 ## Models
 
