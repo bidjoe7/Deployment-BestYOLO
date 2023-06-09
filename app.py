@@ -200,7 +200,7 @@ def main():
     st.sidebar.title("Settings")
 
     # upload model
-     model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol", "🦺 Safety Vest", "⛑️ Helmet","👷🏾‍♂️ Safety Protocol [SCYRISLite]", "🦺 Safety Vest [SCYRISLite]", "⛑️ Helmet [SCYRISLite]"])
+    model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol", "🦺 Safety Vest", "⛑️ Helmet","👷🏾‍♂️ Safety Protocol [SCYRISLite]", "🦺 Safety Vest [SCYRISLite]", "⛑️ Helmet [SCYRISLite]"])
     # URL, upload file (max 200 mb)
     if model_src == "👷🏻‍♂️ Safety Protocol":
         url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
