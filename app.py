@@ -252,6 +252,9 @@ def main():
 
         # load model
         model = load_model(cfg_model_path, device_option)
+        
+        # input options
+        input_option = st.sidebar.checkbox("Input Type: ", ['🖼️ Image'])
 
         # confidence slider
         confidence = st.sidebar.slider('Confidence', min_value=0.1, max_value=1.0, value=.45)
@@ -264,21 +267,12 @@ def main():
         model.classes = classes
         st.sidebar.markdown("---")
 
-        # input options
-        input_option = st.sidebar.radio("Select Input Type: ", ['🖼️ Image', '📽️ Video', '📷 Webcam'])
-
         # input src option
         data_src = st.sidebar.radio("Select Input Source: ", ['Sample Data', 'Upload Your Own Data'])
 
-        if input_option == '🖼️ Image':
+        if input_option:
             image_input(data_src)
-        elif input_option == '📽️ Video':
-            video_input(data_src)
-        else:
-            webrtc_streamer(key="objectDetector", video_transformer_factory=VideoProcessor,
-                        rtc_configuration=RTCConfiguration({
-                            "iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]
-                        }))
+        
 
 
 if __name__ == "__main__":
