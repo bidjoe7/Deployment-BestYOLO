@@ -228,7 +228,7 @@ def main():
             model_file = model_file_
             cfg_model_path = model_file
     if model_src == "🦺 Safety Vest [SCYRISLite]":
-        url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
+        url = "https://huggingface.co/BIDJOE/SCYRISLite-SCYTRIS/resolve/main/BiFPN_SafetyVest.pt"
         model_file_ = download_model(url)
         if model_file_.split(".")[-1] == "pt":
             model_file = model_file_
