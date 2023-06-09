@@ -254,7 +254,7 @@ def main():
         model = load_model(cfg_model_path, device_option)
         
         # input options
-        input_option = st.sidebar.checkbox("Input Type: ", ['🖼️ Image'])
+        input_option = st.sidebar.checkbox("Input Type: 🖼️ Image")
 
         # confidence slider
         confidence = st.sidebar.slider('Confidence', min_value=0.1, max_value=1.0, value=.45)
