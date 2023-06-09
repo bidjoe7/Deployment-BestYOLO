@@ -37,9 +37,14 @@ The dataset are sourced from `Roboflow`, you can access with link below :
 You can train the model by your self with collab we've preparing below :
 <br>
 
+**SCYRIS**
 - [Hard Hat](https://colab.research.google.com/drive/1qa4I47fHRuj1ro1j-cT8xDOQsIuvX0ps?usp=sharing)
 - [Safety Vest](https://colab.research.google.com/drive/1CnnIm_ahdVi4PoD_WvZwThZ3EEDDZicA?usp=sharing)
 - [Safety Protocol](https://colab.research.google.com/drive/1PfoKeyG3i7jw0fnqgxr0hejvBm88CQ6A?usp=sharing)
+
+**SCYRIS-lite**
+- [Hard Hat](https://colab.research.google.com/drive/1HbEqYZ_xbdOJ3gEuQy6ddeRkvutaR57-?usp=sharing)
+- [Safety Vest](https://colab.research.google.com/drive/1Oq1KFMXTbGf3ucMnmvFPk0P-ht0JdlDt?usp=sharing)
 
 ## Models
 
