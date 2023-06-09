@@ -22,6 +22,7 @@ confidence = .25
 
 def image_input(data_src):
     img_file = None
+    
     if data_src == 'Sample Data':
         # get all sample images
         img_path = glob.glob('data/sample_images/*')
@@ -33,14 +34,16 @@ def image_input(data_src):
             ts = datetime.timestamp(datetime.now())
             img_file = os.path.join('data/uploaded_data', str(ts)+ img_bytes.name)
             Image.open(img_bytes).save(img_file)
-
     if img_file:
         col1, col2 = st.columns(2)
         with col1:
             st.image(img_file, caption="Selected Image")
         with col2:
-            img = infer_image(img_file)
+            img, counts = infer_image(img_file)
             st.image(img, caption="Model prediction")
+            st.markdown('### Detection Counts')
+            for label, count in counts.items():
+                st.markdown(f'* **{label}**: {count}')
             #save prediction file in data/prediction_data path (Butuh penambahan folder)
             output_file = os.path.join('data/prediction_data', os.path.basename(img_file))
             img.save(output_file)
@@ -89,9 +92,13 @@ def video_input(data_src):
                 break
             frame = cv2.resize(frame, (width, height))
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            output_img = infer_image(frame)
+            output_img, labels = infer_image1(frame)  # Call the function with the added functionality
             result_array = np.array(output_img)
             results.append(result_array)
+
+        # Count the number of occurrences of each label
+        counts = Counter(labels)
+        st.write(counts)  # Display the counts
 
 
         cap.release()
@@ -134,7 +141,22 @@ def infer_image(img, size=None):
     result = model(img, size=size) if size else model(img)
     result.render()
     image = Image.fromarray(result.ims[0])
-    return image
+
+    # Get the labels of detected objects
+    labels = [model.names[int(x[-1])] for x in result.xyxy[0]]
+    counts = Counter(labels)
+    return image, counts
+
+def infer_image1(img, size=None):
+    model.conf = confidence
+    result = model(img, size=size) if size else model(img)
+    result.render()
+    image = Image.fromarray(result.ims[0])
+
+    # Get the labels of detected objects
+    labels = [model.names[int(x[-1])] for x in result.xyxy[0]]
+
+    return image, labels
 
 
 @st.cache_resource
@@ -178,16 +200,14 @@ def main():
     st.sidebar.title("Settings")
 
     # upload model
-    model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol [GhostNet]","👷🏾‍♂️ Safety Protocol [Non GhostNet]", "🦺 Safety Vest", "⛑️ Helmet"])
+     model_src = st.sidebar.radio("Select Model", ["👷🏻‍♂️ Safety Protocol", "🦺 Safety Vest", "⛑️ Helmet","👷🏾‍♂️ Safety Protocol [SCYRISLite]", "🦺 Safety Vest [SCYRISLite]", "⛑️ Helmet [SCYRISLite]"])
     # URL, upload file (max 200 mb)
-    if model_src == "👷🏻‍♂️ Safety Protocol [GhostNet]":
+    if model_src == "👷🏻‍♂️ Safety Protocol":
         url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_protocol-best.pt"
         model_file_ = download_model(url)
         if model_file_.split(".")[-1] == "pt":
             model_file = model_file_
             cfg_model_path = model_file
-    if model_src == "👷🏾‍♂️ Safety Protocol [Non GhostNet]":
-        cfg_model_path = 'models/yolov5s-resnet50xSPPCSPC-640-32-best.pt'
     if model_src == "🦺 Safety Vest":
         url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
         model_file_ = download_model(url)
@@ -199,7 +219,25 @@ def main():
         model_file_ = download_model(url)
         if model_file_.split(".")[-1] == "pt":
             model_file = model_file_
-            cfg_model_path = model_file    
+            cfg_model_path = model_file
+    if model_src == "👷🏾‍♂️ Safety Protocol [SCYRISLite]":
+        url = "https://huggingface.co/BIDJOE/SCYRISLite-SCYTRIS/resolve/main/BiFPN-SafetyProtocol.pt"
+        model_file_ = download_model(url)
+        if model_file_.split(".")[-1] == "pt":
+            model_file = model_file_
+            cfg_model_path = model_file
+    if model_src == "🦺 Safety Vest [SCYRISLite]":
+        url = "https://huggingface.co/BIDJOE/yolov5n-resnet50xSPPCSPCxGhostNet/resolve/main/Safety_vest-best.pt"
+        model_file_ = download_model(url)
+        if model_file_.split(".")[-1] == "pt":
+            model_file = model_file_
+            cfg_model_path = model_file
+    if model_src == "⛑️ Helmet [SCYRISLite]":
+        url = "https://huggingface.co/BIDJOE/SCYRISLite-SCYTRIS/resolve/main/BiFPN-HardHat.pt"
+        model_file_ = download_model(url)
+        if model_file_.split(".")[-1] == "pt":
+            model_file = model_file_
+            cfg_model_path = model_file
 
     # check if model file is available
     if not os.path.isfile(cfg_model_path):
